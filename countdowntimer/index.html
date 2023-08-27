@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+</head>
+<body>
+    <h1>Swagat hai sahil ki samay me!</h1>
+    <h1 class="containerTitle">Countdown Timer!</h1>
+    <div class="containerLabel">
+        <p class="containerLabelL">Hours</p>
+        <p class="containerLabelL">Minutes</p>
+        <p class="containerLabelL">Seconds</p>
+    </div>
+    <div class="containerInput">
+        <input
+        type = "number"
+        maxLength = "2"
+        oninput="this.value=this.value.slice(0,this.maxLength)"
+        class = "containerInputHour"
+        placeholder="00"
+        ></input>
+        
+        <input
+        type = "number"
+        maxLength = "2"
+        oninput="this.value=this.value.slice(0,this.maxLength)"
+        class = "containerInputMinute"
+        placeholder="00"
+        ></input>
+        
+        <input
+        type = "number"
+        maxLength = "2"
+        oninput="this.value=this.value.slice(0,this.maxLength)"
+        class = "containerInputSecond"
+        placeholder="00"
+        ></input>
+        
+    </div>
+    <div class = "containerButton">
+        <button class="btnStart">START</button>
+        <button class="btnStop">STOP</button>
+        <button class="btnReset">RESET</button>
+    </div>
+</body>
+</html>

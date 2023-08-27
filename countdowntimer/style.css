@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: rgb(249, 249, 229);
+}
+body{
+    height : 85vh;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    
+}
+.containerLabel{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.containerLabelL{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.btnStart,.btnStop,.btnReset{
+    margin-right:30px;
+    padding:10px;
+    
+}
+
+.btnStart{
+    background-color: greenyellow;
+    color: rgb(11, 11, 11);
+}
+.btnStart:hover{
+    background-color: rgb(48, 71, 13);
+    color: white;
+}
+.btnStop{
+    background-color: red;
+    color: white;
+    display : none;
+}
+.btnStop:hover{
+    background-color: rgb(95, 2, 2);
+}
+.btnReset{
+    background-color: rgb(47, 158, 255);
+    color: white;
+}
+.btnReset:hover{
+    background-color: rgb(13, 37, 71);
+    color: white;
+}
+.containerInputHour,.containerInputMinute,.containerInputSecond{
+    border:none;
+    font-size: 50px;
+    height : 90px;
+    width : 100px;
+    outline: none;
+}
